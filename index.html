@@ -1541,7 +1541,7 @@
                     // Hide additional products based on current filter
                     hiddenProducts.forEach(product => {
                         if (currentFilter === 'all' || product.getAttribute('data-category') === currentFilter) {
-                            product.style.opacity = '1';
+                            product.style.opacity = '0';
                             product.style.transform = 'translateY(20px)';
                             setTimeout(() => {
                                 product.style.display = 'none';
